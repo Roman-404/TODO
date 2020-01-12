@@ -1,0 +1,18 @@
+body {
+    margin: 2rem auto 0 auto;
+    max-width: 500px;
+    background: #edebd5;   
+    color: #000;
+}
+
+.add {
+    color: #edebd5;
+    margin-left: 7px;
+    opacity: 1;
+    transition: transform 1s;
+}
+
+.add:hover {
+    opacity: 0.8;
+    transform: rotate(15deg);
+}
