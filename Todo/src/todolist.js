@@ -8,7 +8,7 @@ export default class TodoList extends React.Component {
         todoList: this.props.todoList,
     }
 
-componentWillReceiveProps(nextProps){
+UNSAFE_componentWillReceiveProps(nextProps){
     this.setState({
         todoList: nextProps.todoList
     })
