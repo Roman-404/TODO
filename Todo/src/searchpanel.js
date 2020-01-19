@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import {Input} from '@material-ui/core';
-import AddIcon from '@material-ui/icons/Add';
-import Fab from '@material-ui/core/Fab';
-
 
 export default class SearchPanel extends Component {
    
@@ -37,9 +34,8 @@ render(){
         <Input
         style={{width: '70%'}}
         placeholder='search or add new item task'
-        onChange={this.onLabelSet, this.onSearch}
-        value={this.state.label}
-        />
+        onChange={(this.onLabelSet, this.onSearch)}
+        value={this.state.label}/>
         <button className='add btn btn btn-secondary'>add</button>       
         </form>
        )

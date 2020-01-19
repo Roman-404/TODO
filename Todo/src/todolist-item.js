@@ -13,14 +13,14 @@ export const TodoListItem = ({label, favorite, done, onPrimaryItem, onItemDone, 
         onClick = {onItemDone}
         ><ListItemText primary = {!done ? label : <strike style={{color: 'black'}}>{label}</strike>}/>
         <ListItemSecondaryAction>
-        <IconButton edge='end'>
-            <DeleteIcon
-            onClick = {onDeleted} />
+        <IconButton edge='end'
+                    onClick = {onDeleted}>
+            <DeleteIcon/>
         </IconButton>
-        <IconButton edge='end'>
+        <IconButton edge='end'
+                    onClick = {onPrimaryItem}>
             <FavoriteIcon
-            style = {done ? {color: '#696969'} : {color: favorite ? '#FF0000' : '#696969'}}
-            onClick = {onPrimaryItem} />
+            style = {done ? {color: '#696969'} : {color: favorite ? '#FF0000' : '#696969'}}/>
         </IconButton>
         </ListItemSecondaryAction>
         </ListItem>
