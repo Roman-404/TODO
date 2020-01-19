@@ -19,7 +19,7 @@ export const TodoListItem = ({label, favorite, done, onPrimaryItem, onItemDone, 
         </IconButton>
         <IconButton edge='end'>
             <FavoriteIcon
-            style = {{color: favorite ? '#FF0000' : '#696969'}}
+            style = {done ? {color: '#696969'} : {color: favorite ? '#FF0000' : '#696969'}}
             onClick = {onPrimaryItem} />
         </IconButton>
         </ListItemSecondaryAction>
